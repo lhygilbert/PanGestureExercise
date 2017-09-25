@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     lazy var fileView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "file")
+        imageView.image = #imageLiteral(resourceName: "doc")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
         let pan = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     let trashView: UIImageView = {
         let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "tashCan")
+        imageView.image = #imageLiteral(resourceName: "trashcan")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
             trashView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -8),
             trashView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -8),
             trashView.widthAnchor.constraint(equalToConstant: 100),
-            trashView.heightAnchor.constraint(equalToConstant: 150),
+            trashView.heightAnchor.constraint(equalToConstant: 100),
             
             resetButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             resetButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -20),
